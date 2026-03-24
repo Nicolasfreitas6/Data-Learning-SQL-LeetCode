@@ -1,4 +1,6 @@
-# Write your MySQL query statement below
+#--Tipo: SELF JOIN + agregação
+#--Conceito: JOIN + cálculo + AVG + ROUND
+#--Problema: Average Time of Process per Machine
 SELECT a1.machine_id,
     ROUND(AVG(a2.timestamp - a1.timestamp), 3) AS processing_time
 FROM activity a1
